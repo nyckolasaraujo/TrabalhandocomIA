@@ -1,0 +1,158 @@
+
+body {
+   
+    background-image: url('./img/BANNER3.jpg');
+    background-size: cover;
+    height: 100vh; 
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.caixa-principal {
+
+    height: 100%;
+    width: 100%;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #121118;
+    color: rgb(245, 241, 241);
+}
+
+.division1{
+    display: flex; 
+    align-items: center;
+}
+.division1 h2{
+    margin: 10px;
+    font-size: 24px;
+    color: burlywood;
+}
+.division1 img{
+    margin-right: 15px;
+
+}
+
+.division2{
+    display: flex; 
+    align-items: center;
+}
+.division2 h2{
+    margin: 0;
+    font-size: 24px;
+    color: white;
+}
+.division2 img{
+    margin-right: 15px;
+
+}
+
+.titulo {
+    color: white;
+    margin: 20px;
+    text-align: center;
+}
+
+.jogo1 {
+height: 350px;
+margin-left: 20px;
+margin-top: 50px;
+display:  block;
+}
+
+.jogo2 {
+    height: 350px;
+    margin: 20px;
+    display:  block;
+}
+
+.logo img {
+    height: 50px; 
+}
+
+.title h1 {
+    margin: 0;
+    font-size: 44px;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navigation li {
+    margin-left: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.navigation a:hover {
+    background-color: #555bad;
+}
+
+
+@media (max-width: 920px) {
+
+  
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    
+    .logo img {
+        height: 40px;
+    }
+
+    .title h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    
+    .navigation ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .navigation li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+   
+    .division1, .division2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .division1 h2, .division2 h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .jogo1, .jogo2 {
+        height: 250px;
+        margin: 10px auto;
+    }
+
+    
+    .titulo {
+        font-size: 22px;
+        margin: 15px;
+    }
+}
